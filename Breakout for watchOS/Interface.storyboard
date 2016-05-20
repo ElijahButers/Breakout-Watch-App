@@ -99,20 +99,18 @@
         <!--Glance Interface Controller-->
         <scene sceneID="89j-b6-gkz">
             <objects>
-                <glanceController topTemplateType="groupLeftSmall" bottomTemplateType="extraLargeLargeBody1Footer" id="ckU-D4-yUP">
+                <glanceController id="ckU-D4-yUP">
                     <items>
                         <group alignment="left" id="Bah-Zz-v2Z">
                             <items>
                                 <imageView width="1" height="1" alignment="left" id="LIh-XB-OBi"/>
                             </items>
                         </group>
-                        <label alignment="left" text="Label" id="WsU-98-7GE"/>
-                        <label alignment="left" text="Label" id="SqU-08-RCC"/>
-                        <label alignment="left" text="Label" id="XP3-Dc-s1D"/>
-                        <label alignment="left" text="1234" id="U7H-xu-n9H"/>
-                        <label alignment="left" text="1234" id="zCV-pK-J07"/>
-                        <label alignment="left" text="Label" id="Vgz-gU-NqP"/>
-                        <label alignment="left" text="Footer" id="v29-H0-aih"/>
+                        <group alignment="left" id="Ql7-rv-Dqe">
+                            <items>
+                                <imageView width="1" height="1" alignment="left" id="vea-yw-5B6"/>
+                            </items>
+                        </group>
                     </items>
                 </glanceController>
             </objects>
