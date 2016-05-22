@@ -103,13 +103,15 @@
                     <items>
                         <group alignment="left" id="Bah-Zz-v2Z">
                             <items>
-                                <label alignment="left" text="Label" id="FPN-aK-5Ub"/>
+                                <label alignment="left" text="Next breakout..." numberOfLines="2" id="FPN-aK-5Ub">
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </label>
                             </items>
                         </group>
-                        <group alignment="left" id="Ql7-rv-Dqe">
+                        <group alignment="left" layout="vertical" id="Ql7-rv-Dqe">
                             <items>
-                                <label alignment="left" text="Label" id="5PC-vZ-tCM"/>
-                                <imageView width="1" height="1" alignment="left" id="vea-yw-5B6"/>
+                                <label width="1" alignment="left" text="High knees" textAlignment="center" numberOfLines="0" id="5PC-vZ-tCM"/>
+                                <imageView height="78" alignment="center" image="highknees" contentMode="scaleAspectFit" id="vea-yw-5B6"/>
                             </items>
                         </group>
                     </items>
