@@ -103,11 +103,12 @@
                     <items>
                         <group alignment="left" id="Bah-Zz-v2Z">
                             <items>
-                                <imageView width="1" height="1" alignment="left" id="LIh-XB-OBi"/>
+                                <label alignment="left" text="Label" id="FPN-aK-5Ub"/>
                             </items>
                         </group>
                         <group alignment="left" id="Ql7-rv-Dqe">
                             <items>
+                                <label alignment="left" text="Label" id="5PC-vZ-tCM"/>
                                 <imageView width="1" height="1" alignment="left" id="vea-yw-5B6"/>
                             </items>
                         </group>
