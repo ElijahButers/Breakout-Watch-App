@@ -111,7 +111,7 @@
                         <group alignment="left" layout="vertical" id="Ql7-rv-Dqe">
                             <items>
                                 <label width="1" alignment="left" text="High knees" textAlignment="center" numberOfLines="0" id="5PC-vZ-tCM"/>
-                                <imageView height="78" alignment="center" image="highknees" contentMode="scaleAspectFit" id="vea-yw-5B6"/>
+                                <imageView height="78" alignment="center" hidden="YES" image="highknees" contentMode="scaleAspectFit" id="vea-yw-5B6"/>
                             </items>
                         </group>
                     </items>
