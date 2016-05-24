@@ -99,7 +99,7 @@
         <!--Glance Interface Controller-->
         <scene sceneID="89j-b6-gkz">
             <objects>
-                <glanceController id="ckU-D4-yUP">
+                <glanceController id="ckU-D4-yUP" customClass="GlanceInterfaceController" customModule="Breakout_for_watchOS_Extension">
                     <items>
                         <group alignment="left" id="Bah-Zz-v2Z">
                             <items>
