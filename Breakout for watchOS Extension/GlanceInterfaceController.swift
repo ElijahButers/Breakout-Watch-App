@@ -46,5 +46,21 @@ class GlanceInterfaceController: WKInterfaceController {
     lowerSectionGroup.setBackgroundImage(nil)
     timerLabel.setHidden(true)
   }
+  
+  func showActiveUI(remaining: NSTimeInterval) {
+    
+    let location = Int(workoutManager.percentComplete * Double(circularProgressAnimationFrames))
+    lowerSectionGroup.setBackgroundImageNamed("progress")
+    lowerSectionGroup.startAnimatingWithImagesInRange(NSRange(location: location, length: circularProgressAnimationFrames), duration: remaining, repeatCount: 1)
+    workoutImage.setHidden(true)
+    workoutNameLabel.setHidden(true)
+    titleLabel.setTextColor(UIColor.whiteColor())
+    titleLabel.setText(workoutManager.currentWorkout.name)
+    
+    timerLabel.setHidden(false)
+    timerLabel.setDate(NSDate(timeIntervalSinceNow: remaining))
+    timerLabel.start()
+    NSTimer.scheduledTimerWithTimeInterval(remaining, target: self, selector: "showTrophy", userInfo: nil, repeats: false)
+  }
 
 }
