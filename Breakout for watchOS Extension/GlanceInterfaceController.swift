@@ -11,7 +11,13 @@ import Foundation
 
 
 class GlanceInterfaceController: WKInterfaceController {
-
+  
+  @IBOutlet var titleLabel: WKInterfaceLabel!
+  @IBOutlet var lowerSectionGroup: WKInterfaceGroup!
+  @IBOutlet var workoutImage: WKInterfaceImage!
+  @IBOutlet var workoutNameLabel: WKInterfaceLabel!
+  @IBOutlet var timerLabel: WKInterfaceTimer!
+  
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         

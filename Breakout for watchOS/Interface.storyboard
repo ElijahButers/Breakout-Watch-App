@@ -119,6 +119,13 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="lowerSectionGroup" destination="Ql7-rv-Dqe" id="VL2-9t-ysz"/>
+                        <outlet property="timerLabel" destination="WTb-RF-dFO" id="veF-xb-z6v"/>
+                        <outlet property="titleLabel" destination="FPN-aK-5Ub" id="NIB-21-w3E"/>
+                        <outlet property="workoutImage" destination="vea-yw-5B6" id="alN-Iv-B6r"/>
+                        <outlet property="workoutNameLabel" destination="5PC-vZ-tCM" id="Z6H-Tc-woR"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="810" y="600"/>
