@@ -108,16 +108,20 @@
                                 </label>
                             </items>
                         </group>
-                        <group alignment="left" layout="vertical" id="Ql7-rv-Dqe">
+                        <group alignment="left" backgroundImage="progress0" contentMode="scaleAspectFit" layout="vertical" id="Ql7-rv-Dqe">
                             <items>
                                 <label width="1" alignment="left" text="High knees" textAlignment="center" numberOfLines="0" id="5PC-vZ-tCM"/>
                                 <imageView height="78" alignment="center" hidden="YES" image="highknees" contentMode="scaleAspectFit" id="vea-yw-5B6"/>
+                                <timer alignment="center" verticalAlignment="center" previewedSeconds="30" id="WTb-RF-dFO">
+                                    <fontDescription key="font" type="system" pointSize="36"/>
+                                    <calendarUnit key="units" second="YES"/>
+                                </timer>
                             </items>
                         </group>
                     </items>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="880" y="610"/>
+            <point key="canvasLocation" x="810" y="600"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.47058823529411764" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
