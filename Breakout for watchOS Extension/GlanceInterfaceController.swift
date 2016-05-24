@@ -18,6 +18,8 @@ class GlanceInterfaceController: WKInterfaceController {
   @IBOutlet var workoutNameLabel: WKInterfaceLabel!
   @IBOutlet var timerLabel: WKInterfaceTimer!
   
+  let workoutManager  = WorkoutManager.defaultManager
+  
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
