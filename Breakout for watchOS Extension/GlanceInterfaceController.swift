@@ -35,5 +35,16 @@ class GlanceInterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+  
+  func showNextUpUI() {
+    workoutImage.setHidden(false)
+    workoutImage.setImageNamed(workoutManager.nextWorkout.imageName)
+    workoutNameLabel.setHidden(false)
+    workoutNameLabel.setText(workoutManager.nextWorkout.name)
+    titleLabel.setText("Next breakout...")
+    titleLabel.setTextColor(UIColor.darkGrayColor())
+    lowerSectionGroup.setBackgroundImage(nil)
+    timerLabel.setHidden(true)
+  }
 
 }
