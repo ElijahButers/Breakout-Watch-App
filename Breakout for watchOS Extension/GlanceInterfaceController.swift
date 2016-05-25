@@ -62,5 +62,12 @@ class GlanceInterfaceController: WKInterfaceController {
     timerLabel.start()
     NSTimer.scheduledTimerWithTimeInterval(remaining, target: self, selector: "showTrophy", userInfo: nil, repeats: false)
   }
+  
+  func showTrophy() {
+    timerLabel.setHidden(true)
+    workoutImage.setHidden(false)
+    workoutImage.setImageNamed("trophy")
+    lowerSectionGroup.setBackgroundImage(nil)
+  }
 
 }
