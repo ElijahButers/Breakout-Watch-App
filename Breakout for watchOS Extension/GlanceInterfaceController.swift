@@ -29,6 +29,12 @@ class GlanceInterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+      
+      if let remaining = workoutManager.timeRemaining {
+        showActiveUI(remaining)
+      } else {
+        showNextUpUI()
+      }
     }
 
     override func didDeactivate() {
