@@ -51,6 +51,8 @@ class GlanceInterfaceController: WKInterfaceController {
     titleLabel.setTextColor(UIColor.darkGrayColor())
     lowerSectionGroup.setBackgroundImage(nil)
     timerLabel.setHidden(true)
+    
+    updateUserActivity("com.rw.breakout.glance", userInfo: ["action": "starkWorkout"], webpageURL: nil)
   }
   
   func showActiveUI(remaining: NSTimeInterval) {
