@@ -69,6 +69,8 @@ class GlanceInterfaceController: WKInterfaceController {
     timerLabel.setDate(NSDate(timeIntervalSinceNow: remaining))
     timerLabel.start()
     NSTimer.scheduledTimerWithTimeInterval(remaining, target: self, selector: "showTrophy", userInfo: nil, repeats: false)
+    
+    updateUserActivity("com.rw.breakout.glance", userInfo: ["action": "showTrophy"], webpageURL: nil)
   }
   
   func showTrophy() {
