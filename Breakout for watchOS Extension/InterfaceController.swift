@@ -105,5 +105,19 @@ class InterfaceController: WKInterfaceController {
     activeWorkout = false
     WKInterfaceController.reloadRootControllers([("InitialController",""),("TrophyController","animate")])
   }
+  
+  override func handleUserActivity(userInfo: [NSObject : AnyObject]?) {
+    
+    guard let userInfo = userInfo,
+      let action = userInfo["action"] as? String else { return }
+    switch action {
+    case  "startWorkout":
+      prepareForWorkout()
+    case "showTrophy":
+      WKInterfaceController.reloadRootControllers([("InitialController", ""), ("TrophyController", "animate")])
+    default:
+      break
+    }
+  }
 
 }
